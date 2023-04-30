@@ -1,23 +1,32 @@
 import logo from './logo.svg';
-import './App.css';
-
+import Hero from './components/main/Hero';
+import { classNames }   from "./utils/classNames";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col">
+      <div className="mt-10 flex flex-col justify-center content-center text-white text-4xl bg ">
+        <Hero />
+      </div>
+      <main className="flex flex-col items-center text-white">
+        <section id="gallery" className={classNames.sectionNorm}>
+          
+        </section>
+        <section id="media" className={classNames.sectionGallery}>
+       
+        </section>
+        <section id="shows" className={classNames.sectionNorm}>
+        
+        </section>
+        <section id="shows" className={classNames.sectionNorm}>
+       
+        </section>
+       
+      </main>
+      <footer>   
+        <section className="text-white p-4 flex flex-col items-center justify-center content-center text-center h-100 pb-20 ">
+       
+        </section>
+      </footer>
     </div>
   );
 }
