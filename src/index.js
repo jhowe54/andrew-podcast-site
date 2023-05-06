@@ -11,7 +11,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
-    <Header />
     <Routes>
       <Route path="/" element={<App />} />
     </Routes>

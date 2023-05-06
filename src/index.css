@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 @font-face {
   font-family: 'Formula1';
   src: local('Formula1'), url(./fonts/Formula1-Regular_web_0.ttf) format('truetype');
@@ -37,20 +42,22 @@ h1 {
 }
 
 
-#hero {
+
+
+#background {
   background-image: url("../public/f1.avif");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
-}
+} 
 
 #mask {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#navbar, #hero {
+#navbar, #hero, #title {
   font-family: "Formula1";
 }
 
@@ -60,3 +67,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

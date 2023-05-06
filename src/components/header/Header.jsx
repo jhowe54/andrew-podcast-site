@@ -3,10 +3,10 @@ import Title from "./Title";
 
 function Header() {
   return (
-    <header>
-     
-     
-    </header>
+    <>
+    <Title />
+    <NavBar />
+    </>
   )
 }
 
