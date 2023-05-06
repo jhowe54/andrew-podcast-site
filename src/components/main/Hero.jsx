@@ -1,7 +1,7 @@
 function Hero() {
     return (
-        <div>
-            Hero
+        <div className="mx-auto w-full text-center">
+            Subtitle placeholder text
         </div>
     )
 }

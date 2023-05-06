@@ -1,15 +1,24 @@
 import logo from './logo.svg';
 import Hero from './components/main/Hero';
 import { classNames }   from "./utils/classNames";
+import Title from './components/header/Title';
+import NavBar from './components/header/NavBar';
+import Gallery from './components/main/Gallery';
 function App() {
   return (
     <div className="App flex flex-col">
-      <div className="mt-10 flex flex-col justify-center content-center text-white text-4xl bg ">
+      <div id="hero" className="bg h-[60vh] flex flex-col justify-center content-center text-white text-4xl bg  z-0">
+        <div id="mask" className='w-full h-full'>
+          <Title />
         <Hero />
+        
+        </div>
+        
       </div>
+      <NavBar />
       <main className="flex flex-col items-center text-white">
         <section id="gallery" className={classNames.sectionNorm}>
-          
+          <Gallery />
         </section>
         <section id="media" className={classNames.sectionGallery}>
        
